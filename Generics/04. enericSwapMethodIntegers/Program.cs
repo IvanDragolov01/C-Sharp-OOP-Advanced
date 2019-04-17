@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _04._enericSwapMethodIntegers
+namespace _04._GenericSwapMethodIntegers
 {
 	class Program
 	{
