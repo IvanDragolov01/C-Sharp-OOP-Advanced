@@ -12,8 +12,7 @@ namespace _02._Generic_Box_of_Integer
 			for (int i = 0; i < numbersOfStrings; i++)
 			{
 				int number = int.Parse(Console.ReadLine());
-				result += ($"{number.GetType()}: {number}");
-				result += Environment.NewLine;
+				result += $"{number.GetType()}: {number}"+ Environment.NewLine;
 			}
 
 			Console.WriteLine(result);
