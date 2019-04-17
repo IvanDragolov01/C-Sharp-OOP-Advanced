@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _04._enericSwapMethodIntegers
+﻿namespace _04.GenericSwapMethodIntegers
 {
 	public class Box<T>
 	{
-		private T _item;
+		public T _item;
 
 		public Box(T item)
 		{

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _04._GenericSwapMethodIntegers
+namespace _04.GenericSwapMethodIntegers
 {
-	class Program
+	public class Program
 	{
 		static void Main(string[] args)
 		{
