@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace _05.GenericCountMethodStrings
 {
@@ -20,17 +21,20 @@ namespace _05.GenericCountMethodStrings
 
 		public int isEqual()
 		{
-			int equalsNumbers = 0;
+			int greaterNumbers = 0;
 
 			foreach (string element in allElements)
 			{
-				if (element != _finalElement)
+				if (element.Equals(_finalElement) && element.Count() == _finalElement.Count())
 				{
-					equalsNumbers++;
+				}
+				else
+				{
+					greaterNumbers++;
 				}
 			}
 
-			return equalsNumbers;
+			return greaterNumbers;
 		}
 	}
 }
