@@ -1,21 +1,21 @@
 ﻿using System;
 
-namespace _02._Generic_Box_of_Integer
+namespace _02.GenericBoxofInteger
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			int numbersOfStrings = int.Parse(Console.ReadLine());
-			string result = string.Empty;
+			int number;
+			number = int.Parse(Console.ReadLine());
 
-			for (int i = 0; i < numbersOfStrings; i++)
+			for (int i = 0; i < number; i++)
 			{
-				int number = int.Parse(Console.ReadLine());
-				result += $"{number.GetType()}: {number}"+ Environment.NewLine;
+				int num = int.Parse(Console.ReadLine());
+				Box<int> box = new Box<int>(num);
+				Console.WriteLine(box.ToString());
 			}
-
-			Console.WriteLine(result);
+			
 		}
 	}
 }
