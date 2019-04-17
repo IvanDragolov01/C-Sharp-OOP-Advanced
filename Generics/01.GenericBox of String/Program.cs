@@ -6,17 +6,11 @@ namespace _01.GenericBox_of_String
 	{
 		static void Main(string[] args)
 		{
-			int numbersOfStrings = int.Parse(Console.ReadLine());
-			string result = string.Empty;
+			Box<int> box1 = new Box<int>(int.MinValue);
+			Box<string> box2 = new Box<string>("life in a box");
 
-			for (int i = 0; i < numbersOfStrings; i++)
-			{
-				string text = Console.ReadLine();
-				result += ($"{text.GetType()}: {text.ToString()}");
-				result += Environment.NewLine;
-			}
-
-			Console.WriteLine(result);
+			Console.WriteLine(box1);
+			Console.WriteLine(box2);
 		}
 	}
 }
