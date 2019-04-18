@@ -34,7 +34,7 @@ namespace _07.CustomList
 					case "Greater":
 						string greaterWord = command[1];
 						box.Greater(greaterWord);
-						break;
+						break;					
 					case "Max":
 						box.PrintMaxElement();
 						break;
@@ -43,7 +43,7 @@ namespace _07.CustomList
 						break;
 					case "Print":
 						box.PrintAllElements();
-						break;
+						break;					
 				}
 
 				command[0] = Console.ReadLine();
