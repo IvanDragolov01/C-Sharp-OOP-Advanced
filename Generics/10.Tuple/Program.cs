@@ -6,6 +6,7 @@ namespace _10.Tuple
 	{
 		static void Main(string[] args)
 		{
+			var newBox = new Tuple<int>();
 
 		}
 	}
