@@ -29,10 +29,6 @@ namespace _05.GenericCountMethodStrings
 				{
 					greaterNumbers++;
 				}
-				else
-				{
-
-				}
 			}
 
 			return greaterNumbers;
