@@ -25,12 +25,13 @@ namespace _05.GenericCountMethodStrings
 
 			foreach (string element in allElements)
 			{
-				if (element.Equals(_finalElement) && element.Count() == _finalElement.Count())
+				if (element.CompareTo(_finalElement) != 0)
 				{
+					greaterNumbers++;
 				}
 				else
 				{
-					greaterNumbers++;
+
 				}
 			}
 
