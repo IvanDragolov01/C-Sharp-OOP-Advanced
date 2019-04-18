@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace _07.CustomList
 {
@@ -19,15 +18,15 @@ namespace _07.CustomList
 			elements.Remove(elements[index]);
 		}
 
-		public bool IsContains(string word)
+		public void IsContains(string word)
 		{
 			if (elements.Contains(word))
 			{
-				return true;
+				Console.WriteLine("True");
 			}
 			else
 			{
-				return false;
+				Console.WriteLine("False");
 			}
 		}
 

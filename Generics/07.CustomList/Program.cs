@@ -26,15 +26,14 @@ namespace _07.CustomList
 						box.IsContains(wordIsContains);
 						break;
 					case "Swap":
-						string[] tokens = command[1].Split(" ");
-						int indexOne = int.Parse(tokens[0]);
-						int indexTwo = int.Parse(tokens[1]);
+						int indexOne = int.Parse(command[1]);
+						int indexTwo = int.Parse(command[2]);
 						box.SwapElements(indexOne, indexTwo);
 						break;
 					case "Greater":
 						string greaterWord = command[1];
 						box.Greater(greaterWord);
-						break;					
+						break;
 					case "Max":
 						box.PrintMaxElement();
 						break;
@@ -43,10 +42,10 @@ namespace _07.CustomList
 						break;
 					case "Print":
 						box.PrintAllElements();
-						break;					
+						break;
 				}
 
-				command[0] = Console.ReadLine();
+				command = Console.ReadLine().Split();
 			}
 		}
 	}
