@@ -4,8 +4,13 @@ namespace _09.CustomListIterator
 {
 	class Program
 	{
-		static void Main(string[] args)
+		public static void Main(string[] args)
 		{
+			if (args == null)
+			{
+				throw new ArgumentNullException(nameof(args));
+			}
+
 			string[] command = Console.ReadLine().Split(" ");
 			Box box = new Box();
 

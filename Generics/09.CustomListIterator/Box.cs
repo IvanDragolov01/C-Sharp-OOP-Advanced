@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace _09.CustomListIterator
 {
-	public class Box 
+	public class Box
 	{
 		private List<string> elements = new List<string>();
 
@@ -74,5 +74,26 @@ namespace _09.CustomListIterator
 		{
 			Console.WriteLine(elements.Min());
 		}
+
+		public IEnumerator<string> GetEnumerator()
+		{
+			for (int i = 0; i < elements.Count; i++)
+			{
+				yield return elements[i];
+			}
+		}
+
+		//IEnumerator IEnumerable.GetEnumerator()
+		//{
+		//	return GetEnumerator();
+		//}
+
+		//private void ValidateIndex(int index)
+		//{
+		//	if (index < 0 || index > elements.Count - 1)
+		//	{
+		//		throw new IndexOutOfRangeException();
+		//	}
+		//}
 	}
 }
